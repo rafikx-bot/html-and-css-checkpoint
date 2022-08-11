@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/app.css">
     <title>Html checkpoint</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <header class="header">
         <nav class="nav">
           <a href="" class="nav-brand">
-            <h1><b>Rafik</b>Otmani</h1>
+            <p><b>Rafik</b> Otmani</p>
           </a>
           <ul class="nav-items">
             <li class="nav-item">
@@ -43,19 +44,23 @@
           ></iframe>
         </section>
         <!-- this is about section-->
-        <section class="About">
-          <h1>Full stack web developer</h1>
-          <button class="about">download my cv</button>
+        <section class="about">
+          <h1>About</h1>
+          <div class="about-content">
+          <h3>Full stack web developer</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
             deleniti, consectetur, id, culpa pariatur ipsa ducimus modi
             voluptatem nesciunt corporis sit quae inventore adipisci soluta
             saepe dolor dolore aspernatur nisi.
           </p>
+          <button class="about-btn">download my cv</button>
+          </div>
         </section>
         <!--this is work section-->
         <section class="work">
           <h1>Latest Projects</h1>
+          <div class="table">
           <table border="1">
             <tr>
               <th>Client</th>
@@ -93,26 +98,31 @@
               </td>
             </tr>
           </table>
+          </div>
         </section>
         <!-- this is resume section-->
         <section class="resume">
           <h1>Skills</h1>
+          <div class="progress">
           <progress id="file" value="32" max="100">Html</progress>
           <progress id="file" value="32" max="100">CSS</progress>
           <progress id="file" value="32" max="100">JS</progress>
+          <progress id="file" value="32" max="100">React</progress>
+          <progress id="file" value="32" max="100">Mango JS</progress>
+          </div>
         </section>
         <!--this is contact section-->
         <section class="contact">
           <h1>Contact me</h1>
-          <form action="">
+          <form action="" class="form">
             <label for="name">name</label>
-            <input type="text" placeholder="enter your name" />
+            <input type="text" placeholder="enter your name" class="name" />
             <br />
             <label for="email">email</label>
-            <input type="email" placeholder="enter you email" />
+            <input type="email" placeholder="enter you email" class="email" />
             <br />
             <label for="message">message</label>
-            <input type="text-area" placeholder="enter you message" />
+            <input type="text-area" placeholder="enter you message" class="password" />
           </form>
         </section>
       </main>
